@@ -8,11 +8,48 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Merry Christmas Murphy's</title>
+  <style type = "text/css">
+.jumbotron h1 {
+
+  --color1: #0aff0a;
+  --color2: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 46px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color1),
+    var(--color1) 30px,
+    var(--color2) 30px,
+    var(--color2) 60px
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: 40s linear 0s infinite move;
+}
+
+@keyframes move {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: 1000px;
+  }
+}
+
+    
+	
+	.audio-player {
+    
+    margin: auto 20px;
+}
+    </style>
 </head>
 
 <body>
 
-    <div class="jumbotron text-center" style = "background-color: #CC231E; color: white;">
+    <div class="jumbotron text-center" style = "background-color: #CC231E;">
   <h1>Merry Christmas</h1>
   <p>Will is trying to give us a message.</p> 
       <img src = "location.gif" style = "max-width: 90%">
