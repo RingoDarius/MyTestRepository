@@ -91,7 +91,7 @@ volumeControl.addEventListener("input", () => {
     audio.volume = volumeControl.value;
 });
 
-audio.addEventListener("timeupdate", () => {
+/*audio.addEventListener("timeupdate", () => {
     const currentTime = audio.currentTime;
     const duration = audio.duration;
 
@@ -105,7 +105,7 @@ audio.addEventListener("timeupdate", () => {
 
     const progress = (currentTime / duration) * 100;
     progressBar.style.width = `${progress}%`;
-});
+});*/
   </script>
 </body>
 
