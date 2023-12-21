@@ -1,9 +1,13 @@
 body{
-	background-color: #cccccc;
+	background-color: #ffffff;
 }
 .jumbotron{
   background-image:url(red.jpg);
 	color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  background-color: #cccccc;
 }
 
 .jumbotron h1 {
