@@ -9,25 +9,56 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Merry Christmas Murphy's</title>
   <style type = "text/css">
-.audio-player {
-    
-  
-    margin: auto 20px;
+
+
+.jumbotron h1 {
+
+  --color1: #0aff0a;
+  --color2: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 46px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color1),
+    var(--color1) 30px,
+    var(--color2) 30px,
+    var(--color2) 60px
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: 40s linear 0s infinite move;
 }
 
+@keyframes move {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: 1000px;
+  }
+}
 
-    </style>
+    
+	
+	.audio-player {
+    
+    margin: auto 20px;
+}
+	</style>
 </head>
 
 <body>
 
-    <div class="jumbotron text-center" style = "background-color: #CC231E; color: white;">
+    <div class="jumbotron text-center" style = "background-color: #CC231E;">
   <h1>Merry Christmas</h1>
   <p>What a lovely song.  I wonder if it is trying to give us a clue?</p> 
 <div class = "audio-player">
       <audio controls autoplay>
 
   <source src="Christmas_Song.mp3" type="audio/mpeg">
+
 Your browser does not support the audio element.
 </audio>
  
