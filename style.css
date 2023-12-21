@@ -1,11 +1,12 @@
 .jumbotron{
   background-image:url(red.jpg);
+	color: #eeeeee;
 }
 
 .jumbotron h1 {
 
   --color1: #0aff0a;
-  --color2: #ffffff;
+  --color2: #eeeeee;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 46px;
